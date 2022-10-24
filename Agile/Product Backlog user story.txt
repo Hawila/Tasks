@@ -1,0 +1,6 @@
+as a user, I want to be able to create an account so that I would be able to add my contact details(Name, Phone Number,Address) 
+as a user, I want to search for a specific restaurant so that  I don’t waste much time 
+as a user, I want to view restaurants so that I can view their reviews and  menu
+as a user I want an add-to-cart option for multiple orders from different restaurants
+as a user, I want a payment option so I can add my card to purchasing 
+as a restaurants owner I want a dashboard so that I can view and track orders and mark finished one as delivered 
