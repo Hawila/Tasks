@@ -1,0 +1,27 @@
+-after meeting with the developers team, scrum master and view the final project backlogs
+
+-As a Po I stated sprint initial goal as : develop a cross-platform application with a login and sign up page 
+                                          so user can sign up as user or restaurant owner and a profile for each.
+                                           
+
+-then team identified technical constraints and team capabilities to determine team capacity 
+
+-the team preferred to break stories into task
+
+-Team capacity : 30 Hour weekly (60 hour/sprint )
+
+Sprint backlogs:
+-create login/sign up form 
+
+-2 types of users customer/restaurant owner
+
+-profile page for each of user types
+
+-as sprint backlogs didn't exceeded the team velocity team believed they will deliver more  
+
+Sprint goals:
+            - create basic login/sign up form (customer/restaurant owner)
+            - verification system fo both users types
+            - implementing a search algorithm
+            - adding payment system to be able to purchase with credit card
+            - adding dashboard to restaurant owner to be able to track orders 
