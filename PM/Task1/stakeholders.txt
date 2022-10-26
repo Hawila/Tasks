@@ -1,0 +1,13 @@
+Digital discount card application stakeholders:
+
+        1- project manager
+        
+        2- developers team (front-end /back-end developers)
+
+        3- marketing team
+
+        4- users (who providing discounts on their services)
+
+        5 - customers 
+
+        
