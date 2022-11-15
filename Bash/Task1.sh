@@ -39,7 +39,5 @@ fi
 #backup only between 12Am : 5 AM
 
 if [ $hour -lt 5 ] || [ $hour -eq 12 ] && [ "$pm_or_am" == "AM" ];then
-	if [ ! -e $home/Backups/"$year-$mon-$day.xls" ];then
-		echo >> $home/Backups/"$year-$mon-$day.xls"
-	fi
+	mv -f $home/Reports/$year/$mon/$day.xls $home/Backups/"$year-$mon-$day.xls"
 fi
