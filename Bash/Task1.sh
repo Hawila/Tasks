@@ -22,22 +22,37 @@ create_file(){
 
 if [ -d ~/Reports ];
 then
+	echo "Reports Exists Checking Year"
 	if [ ! -d ~/Reports/$year ];
 	then
+		echo "Creating $year Dir"
 		create_year_dir
 		create_file
+		echo "File $day.xls Created in $home/Reports/$year/$mon"
 	else
+		echo "Creating File $day.xls"
 		create_file
+		echo "File $day.xls Created in $home/Reports/$year/$mon"
 	fi
 else
+	echo "making Reports dir ..."
 	mkdir $home/Reports
+	echo "making Backups dir ..."
 	mkdir $home/Backups
 	create_year_dir
 	create_file
+	echo "File $day.xls Created in $home/Reports/$year/$mon"
 fi
 
 #backup only between 12Am : 5 AM
+echo "Checking Time .."
+
+echo "$hour $pm_or_am"
 
 if [ $hour -lt 5 ] || [ $hour -eq 12 ] && [ "$pm_or_am" == "AM" ];then
+	echo "File $day.xls Backedup as  $home/Backups/"$year-$mon-$day.xls""
 	cp  $home/Reports/$year/$mon/$day.xls $home/Backups/"$year-$mon-$day.xls"
+else
+	echo "Backup Failed"
 fi
+
