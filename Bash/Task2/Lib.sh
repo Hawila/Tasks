@@ -45,4 +45,3 @@ home_backup(){
 	echo "00 12 1 * * tar -czf /etc/home.tar.gz $HOME" > "$HOME/backup.txt"
 	crontab "$HOME/backup.txt"
 }
-
