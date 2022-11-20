@@ -10,7 +10,7 @@ user_add(){
 	if grep -q "$1" <<< "$user_exist";then
 		echo "$1 exist"
 	else
-        pass=$(perl -e 'print crypt($ARGV[0], "password")' $2)
+        pass=$(perl -e 'print crypt($ARGV[0], "sprint")' $2)
         useradd -m -p "$pass" "$1" -g Audit 
 		add_check=$(grep "^$1" /etc/passwd)
         if grep -q "$1" <<< "$add_check";then
