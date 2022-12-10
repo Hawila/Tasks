@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  ghost:
+    image: ghost:latest
+    container_name: ghost
+    hostname: ghost
+    volumes:
+      - $PWD/ghost/volumes/config.production.json:/var/lib/ghost/config.production.json:z
+    expose:
+      - "3306"
+    environment:
+      - NODE_ENV=production
+    restart: always
+    links:
+      - mysql
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    volumes:
+      - ./dbdata:/var/lib/mysql:z
+    expose:
+      - "3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD= h@wila
+      - MYSQL_DATABASE=ghostdata
+      - MYSQL_USER=ghostusr
+      - MYSQL_PASSWORD= hawila
+    restart: always
