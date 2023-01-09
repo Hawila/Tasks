@@ -7,7 +7,7 @@ def is_leap(year):
 y = int(input("Please Enter A year:"))
 print(is_leap(y))
 # test Cases
-#  # False
+# print(is_leap(1800)) # False
 
 # print(is_leap(2000))  # True
 
