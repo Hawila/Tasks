@@ -4,10 +4,13 @@ def is_leap(year):
     return (year % 400 == 0 and year % 100 == 0) or (year % 4 == 0 and year % 100 != 0)
 
 
-print(is_leap(1800))  # False
+y = int(input("Please Enter A year:"))
+print(is_leap(y))
+# test Cases
+#  # False
 
-print(is_leap(2000))  # True
+# print(is_leap(2000))  # True
 
-print(is_leap(2400))  # True
+# print(is_leap(2400))  # True
 
-print(is_leap(2500))  # False
+# print(is_leap(2500))  # False
