@@ -24,8 +24,13 @@ def isBalanced(s):
     return "YES" if len(fSub) == 0 else "NO"
 
 
-str = input("Enter a string of brackets:")
-isBalanced(str)
+num_lines = int(input().strip())
+
+for i in range(num_lines):
+    s = input()
+
+    result = isBalanced(s)
+    print(result+"\n")
 
 
 # using regex
