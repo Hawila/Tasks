@@ -1,3 +1,4 @@
+# using stack
 def is_balanced(s):
     # pairs_dictionary
     pairs = {"}": "{", ")": "(", "]": "["}
@@ -26,5 +27,13 @@ str = input("Enter a string of brackets:")
 print(str+" Is Balanced" if is_balanced(str) else str+" is Not Balanced")
 
 
-# {[(])}
-# {(([])[])[]}
+# using regex
+""" import re
+
+
+def is_balanced(s):
+    pattern = "\{}|\[]|\(\)"
+    while (re.search(pattern, s)):
+        s = re.sub(pattern, "", s)
+    return len(s) == 0
+ """
