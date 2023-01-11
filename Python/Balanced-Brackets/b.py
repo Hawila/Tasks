@@ -16,8 +16,6 @@ def is_balanced(s):
             elif (len(fSub) == 0):
                 return False
             elif (pairs[s[j]] == fSub[-1]):
-                current_pair = pairs[s[j]]  # (only for debugging)
-                top = fSub[-1]  # top of stack (only for debugging)
                 fSub.pop()
             j += 1
     # True if list is empty which means all brackets are matched
